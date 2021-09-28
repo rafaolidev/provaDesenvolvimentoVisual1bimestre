@@ -70,7 +70,7 @@ namespace API_AMIGO.Controllers
          // Delete por qualquer item do item DELETE:api/dog/deletenome/{nome}
         [HttpDelete]
         [Route("delete/{name}")]
-        public async Task<IActionResult> DeleteAsync([FromRoute] string modelos)
+        public async Task<IActionResult> DeleteAsync([FromRoute] string name)
         {       
             Carro carro = _context.Carros.FirstOrDefault
             (
