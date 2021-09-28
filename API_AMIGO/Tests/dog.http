@@ -1,0 +1,37 @@
+###
+POST https://localhost:5001/api/dog/create
+Content-Type: application/json
+
+{
+    "nome": "Almofadinhas",
+    "idade": 1,
+    "cor": "Dourada",
+    "raca": "Labrador",
+    "status": "adocao",
+    "id_User": 2
+}
+
+###
+GET https://localhost:5001/api/dog/list
+
+###
+GET https://localhost:5001/api/dog/listbyid/2
+
+###
+DELETE https://localhost:5001/api/dog/deleteid/2
+
+###
+DELETE https://localhost:5001/api/dog/delete/Almofadinhas
+
+###
+PUT https://localhost:5001/api/dog/update
+
+{
+    "id": "5",
+    "nome": "Almofadinhas",
+    "idade": 1,
+    "cor": "Dourada",
+    "raca": "Labrador",
+    "status": "adocao",
+    "id_User": 2
+}
